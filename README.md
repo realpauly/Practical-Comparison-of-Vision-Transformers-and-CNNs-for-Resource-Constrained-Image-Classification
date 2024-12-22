@@ -148,6 +148,56 @@ During training, GPU memory utilization was logged to monitor resource usage.
         **27.9%**.
 -   These results highlight ViT's inefficiency in learning from small-scale
     datasets like CIFAR-10 without extensive pretraining.
+
+# **Comparative Analysis**
+
+## Performance Comparison
+
+### **Accuracy Analysis**
+
+-   **ResNet-18**:
+
+    -   Accuracy steadily improved over epochs, stabilizing at around **90%**,
+        which is typical for convolutional models on CIFAR-10.
+    -   This demonstrates its ability to effectively learn patterns in small
+        datasets while minimizing overfitting.
+
+-   **Vision Transformer (ViT)**:
+
+    -   Struggled to surpass **30% accuracy**, fluctuating slightly without
+        significant improvement.
+    -   Highlights ViT's inefficiency in learning from small-scale datasets
+        without extensive pretraining.
+
+![Figure 3: Accuracy Comparison](accuracy_comparison.png)
+
+![Figure 4: Accuracy per Epoch](accuracy_per_epoch.png)
+
+### **Loss Analysis**
+
+-   **ResNet-18**:
+
+    -   Demonstrated consistent loss reduction, reflecting a strong optimization
+        process.
+    -   By the final epoch, the loss reached a very low value of **0.062**,
+        indicating precise predictions.
+
+-   **ViT**:
+
+    -   Loss remained nearly constant throughout training, hovering around
+        **1.95**.
+    -   This stagnation suggests difficulty in optimizing effectively, likely
+        due to limited dataset size and lack of pretrained weights.
+
+![Figure 5: Loss Comparison](loss_comparison.png)
+
+![Figure 6: Training loss per Epoch](training_loss_per_epoch.png)
+
+### **Efficiency and Resource Usage**
+
+-   GPU memory usage and training time per epoch were monitored, revealing
+    ResNet-18's superior computational efficiency.
+
 # **Conclusion**
 
 -   **ResNet-18**:
