@@ -1,5 +1,5 @@
 # Practical Comparison of Vision Transformers and CNNs for Resource Constrained Image Classification
-
+![](CNNs.png)
 
 ## Introduction
 
